@@ -1,0 +1,38 @@
+@charset "UTF-8";
+ /*
+  em HTML é id = em CSS é #
+  em HTML é class = em CSS é .
+  posso usar mais de um class no html,mais apenas um id,posso colocar id e class em um h1 por exemplo mais o id sempre vai sobrescrever o class.
+  posso também colocar mais de um class em um h1 por exemplo basta dar um espaço como foi mostrado nesse exercício
+ */
+body {
+    background-color: #54cc7e50;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #2E4034;
+}
+#principal {
+    text-align: center;
+    background-color: #587562;
+    color: white;
+}
+h2{
+    color:#587562;
+}
+.basico{
+     color: #424B45;
+
+}
+
+.intermediario{ 
+    color: #424B45;
+
+}
+.avancado{
+    color: #424B45;
+
+}
+.destaque{
+    background-color: #3df57d9e;
+}
