@@ -5,18 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalização dos fundos</title>
     <style>
-        body {
-            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
-            background-size: 100px;
-           /* Exemplos de repetiçoes que a imagem pode ter:
-              background-repeat: no-repeat; não irá repetir
-              background-repeat: repeat-x; irá repetir penas na horizontal
-              background-repeat:repeat-y; irá repetir apenas na vertical*/
+        body{
+            font-family: arial;
+        }
+        p{
+            font-size: 18px;
+        }
+        div.bloco{
+            background-color: rgba(159, 253, 201, 0.316);
+            height: 400px;
+            width: 90%;
+            border: 1px solid black;
+
+        }
+        div#q1{
+            background-image: url(imagens/pattern001.png);
+        }
+        div#q2{
+            background-image:url(imagens/pattern002.png) ;
+            background-repeat: repeat-x;
+        }
+        div#q3{
+            background-image: url(imagens/pattern003.png);
+            background-repeat: repeat-y;
+        }
+        div#q4{
+            background-image: url(imagens/pattern004.png);
+            background-repeat: no-repeat;
         }
     </style>
 </head>
 <body>
+    <h1>Repetições em background-image</h1>
+    <h2>background-repeat:repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical,quanto horizontal</p>
+    <div class="bloco" id="q1">
 
-    
+    </div>
+    <h2>background-repeat:repeat-x;</h2>
+    <p>Repete apenas no eixo horizontal.</p>
+    <div class="bloco" id="q2">
+
+    </div>
+    <h2>background-repeat:repeat-y;</h2>
+    <p>Repete apenas no eixo vertical.</p>
+    <div class="bloco" id="q3">
+
+    </div>
+    <h2>background-repeat:no-repeat;</h2>
+    <p>Não repete em nenhum eixo.A imagem só é carregada uma única vez.</p>
+    <div class="bloco" id="q4">
+
+    </div>
 </body>
 </html>
