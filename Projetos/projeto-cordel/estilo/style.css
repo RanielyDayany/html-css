@@ -1,1 +1,65 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --font1:'Passion One',serif;
+    --font2:'Sriracha',serif;
+    --font3:'Verdana',sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    background-color: #fefefe;
+    min-height:100vh ;
+    font-family: var(--font3);
+}
+
+/* Cabeçalho */
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 250px;
+    
+}
+header > h1{
+    font:normal 7em var(--font1);
+    font-variant: small-caps;
+    padding-top: 60px;
+    
+
+}
+a{
+    color:white;
+    font-family: var(--font3);
+    
+    
+}
+
+/*Corpo */
+section {
+    font-family: var(--font2);
+    margin: 20px;
+
+}
+section > p {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 25pt;
+}
+#img01{
+    background-image:url(/Projetos/projeto-cordel/imagens/background001.jpg);
+    background-size:cover;
+    margin: 0;
+    background-attachment: fixed;
+    color: white;
+    
+    
+}
+
+
