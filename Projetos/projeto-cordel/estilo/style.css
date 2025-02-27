@@ -14,7 +14,7 @@
     padding: 0;
 }
 html,body{
-    background-color: #fefefe;
+    background-color: rgb(255, 255, 255);
     min-height:100vh ;
     font-family: var(--font3);
 }
@@ -37,29 +37,61 @@ header > h1{
 a{
     color:white;
     font-family: var(--font3);
+    text-decoration: none;
+    font-weight: bolder;    
     
-    
+}
+a:hover{
+    text-decoration: underline;
 }
 
 /*Corpo */
 section {
     font-family: var(--font2);
     margin: 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font: normal 25pt var(--font2);
+    line-height: 2em;
+    
 
 }
-section > p {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    font-size: 25pt;
+section.img01 >p,section.img02 >p{
+    background-color: rgba(0, 0, 0, 0.679);
+    width: 400px;
+    color: white;
+    padding-left: 30px;
+
 }
-#img01{
+.img01{
     background-image:url(/Projetos/projeto-cordel/imagens/background001.jpg);
     background-size:cover;
     margin: 0;
     background-attachment: fixed;
-    color: white;
     
     
 }
+.img02{
+    background-image: url(/Projetos/projeto-cordel/imagens/background002.jpg);
+    background-size: cover;
+    margin: 0;
+    background-attachment: fixed;
+
+
+}
+
+
+/*Rodapé */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font: normal 10pt var(--font3);
+    text-align: center;
+
+}
+
+
 
 
