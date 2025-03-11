@@ -28,9 +28,10 @@ header{
     
 }
 header > h1{
-    font:normal 7em var(--font1);
+    font-family: var(--font1);
     font-variant: small-caps;
     padding-top: 60px;
+    font-size: 8vw;/*10% da largura do viewport,essa não é a melhor solução,porém ainda não aprendi sobre media queries,então no momento essa é a melhor solução*/
     
 
 }
@@ -48,37 +49,48 @@ a:hover{
 /*Corpo */
 section {
     font-family: var(--font2);
+    font-size: 3vw;
     margin: 20px;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    font: normal 25pt var(--font2);
     line-height: 2em;
     
 
 }
-section.img01 >p,section.img02 >p{
-    background-color: rgba(0, 0, 0, 0.679);
-    width: 400px;
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.481);
     color: white;
-    padding-left: 30px;
-
-}
-.img01{
-    background-image:url(/Projetos/projeto-cordel/imagens/background001.jpg);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.401);
     background-size:cover;
+    background-position: right center;
     margin: 0;
     background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.558);
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{
+    background-image:url(/Projetos/projeto-cordel/imagens/background001.jpg);
+
     
     
 }
-.img02{
+section#img02{
     background-image: url(/Projetos/projeto-cordel/imagens/background002.jpg);
-    background-size: cover;
-    margin: 0;
-    background-attachment: fixed;
-
-
 }
 
 
