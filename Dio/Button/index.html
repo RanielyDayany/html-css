@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Idade:</label><input type="number" name="age"><br>
+        <label>Senha:</label><input type="password" name="password"><br>
+
+        <!--O button type="button" só vai funcionar se eu colocar um javascript nele,no exemplo o onclick-->
+
+        <!--O button reset vai limpar os campos do form em que ele está inserido-->
+
+        <!--O button submit vai de fato enviar o formulário,aí junto com o submit eu tenho que usar o evento onsumbmit pra validar os campos preenchidos do formulário e não deixar que seja enviado algum campo obrigatório vazio-->
+
+        <button type="button" onclick="alert('Cliquei aqui')">Clicável</button><br>
+        <button type="reset">Limpar</button><br>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>

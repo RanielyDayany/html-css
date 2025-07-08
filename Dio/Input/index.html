@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <!--Min ou max no input tipo number define o número mínimo que eu posso colocar e o número máximo,no caso de idade eu preciso colocar,pra pessoa não conseguir colocar um número negativou,ou um número muito alto.
+    Step significa de quanto em quantos números eu quero pular,no exemplo coloquei 5.
+    Tem como colocar o buttom pelo input,porém semânticamente é melhor colocar um botão como está no exemplo abaixo
+    O email e a url tem um validador próprio do navegador que a pessoa está usando,então tomar cuidado ao usar,colocar o meu próprio validador
+    Inout week só funciona do chrome e o edge
+    Tomar cuidado com essas tags mais específicas,porque cada navegador tem a sua particularidade
+    Existem vários outros tipos de inputs,aqui só citamos alguns,e uns menos usados
+    No input file podemos colocar o atributo multiple,que dá a opção para o usuário de selecionar mais de um arquivo-->
+    <form >
+        <label>Text: </label><input type="text"/><br>
+        <label>Number: </label><input type="number" min="0" step="5" max="99"/><br>
+        <label>Range: </label><input type="range" min="0" max="100"/><br>
+        <label>Color: </label><input type="color"/><br>
+        <label>E-mail: </label><input type="email"/><br>
+        <label>URL: </label><input type="url"/><br>
+        <label>Date: </label><input type="date"/><br>
+        <label>Week: </label><input type="week"/><br>
+        <label>Month: </label><input type="month"/><br>
+        <label>Checkbox: </label><input type="checkbox"/><input type="checkbox"/><br>
+        <label>Radio: </label><input type="radio" name="aceita"><input type="radio"name="aceita"/><br>
+        <label>File: </label><input type="file" multiple/><br>
+        <button type="button">Enviar</button><br>
+    </form>
+    
+</body>
+</html>

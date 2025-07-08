@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <!--No método get,tudo que eu selecionar ou o que eu tiver preenchido,quando eu clicar no botão enviar vai aparecer na url tudo que foi selecionado ou o que eu preenchi nos campos,nesse exemplo colocamos pra ver como enviaria,pra treinar e visualizar como está sendo enviado usar o post-->
+
+    <!--O colchete no nome opcional,serve pra quando as opçoes selecionadas chegarem pro back end,o programa entender que se trata de uma lista e que podem ter tido mais de um elemento selecionado-->
+
+    <!--No método post,que é o certo pra enviar uma lista,o programa usado no back end vai receber dessa forma "opcional["queijo", "cebola"]"-->
+
+    <!--A opção disabled desabilita a opção,impedindo o usuário de selecioná-la-->
+
+    <form  method="get">
+        <h1>Você selecionou:Pizza de Calabresa</h1>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" disabled="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="caçabresa">+ calabresa<br>
+        <input type="checkbox" name="opcional[]" value="cebola">+ cebola<br>
+        <input type="checkbox" name="opcional[]" value="azeitona">+ azeitona<br>
+        <p>Borda recheada?</p>
+
+        <!--No radio pra ser selecionado apenas um valor eu coloco o mesmo nome dos dois-->
+
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="nao">Não<br>
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br>
+        
+        <button type="submit">Enviar pedido</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <!--O action faz com que as informações após clicadas no botão enviar,sejam enviadas pro endereço que nele colocamos.
+    O method é a forma como esses dados serão enviados,no exemplo eu usei o post(que ao enviar senhas,envia de uma forma mais segura),outros exemplos de method são o get e o set
+    O autocomplete on mantém o formulário preenchido quando eu volto pra página,no caso o nome e a idade de acordo com o meu exemplo,a senha ele não salva
+    Onsubmit é o que vai acontecer quando eu clicar no botão enviar,se vai aparecer algum alerta e coisas do tipo,pra ser trabalhado no javascript-->
+
+    <form name="cadastro" autocomplete="on" method="POST" onsubmit="alert('Enviei o formulário');" action="https://meusite.com.br/signup">
+        Nome: <input type="text" name="nome"/><br>
+        Idade: <input type="number" name="idade"/><br>
+        Senha: <input type="password" name="senha"/><br>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
