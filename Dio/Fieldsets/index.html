@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha HTML Dio</title>
+    <style>
+        .linha{
+            margin: 5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 5px 0;
+            border-radius: 10px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!--Só foram usados inputs tipo texto apenas como exemplo-->
+    <h1>Formulário de Cadastro</h1>
+
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <div class="linha">
+            <label>Nome:</label><input type="text"/>
+            <label>E-mail:</label><input type="text"/>
+        </div>
+        <div class="linha">
+            <label>Profissão:</label><input type="text">
+            <label>Empresa:</label><input type="text"/>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        <div class="linha">
+            <label>Endereço:</label><input type="text">
+            <label>Número:</label><input style="width: 30px;" type="text"/>
+        </div>
+        <div class="linha">
+            <label>Bairro:</label><input type="text"/>
+        </div>
+        <div class="linha">
+            <label>Cidade/UF:</label><input type="text"/>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contato</legend>
+        <div class="linha">
+            <label>Celular:</label><input type="text"/>
+            <label>Whatsapp:</label><input type="text"/>
+        </div>
+        <div class="linha">
+            <label>Linkedin:</label><input type="text"/>
+            <label>Github:</label><input type="text"/>
+        </div>
+    </fieldset>
+
+    <div class="linha">
+        <button type="reset">
+            Limpar
+        </button>
+        <button type="submit">
+            Enviar formulário
+        </button>
+    </div>
+
+    
+</body>
+</html>
