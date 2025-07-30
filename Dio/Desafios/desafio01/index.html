@@ -6,40 +6,98 @@
     <title>Tags</title>
     <style>
         body{
-            font:16px arial;
+            font:18px arial;
+
         }
+        
+
     </style>
 </head>
 <body>
     <h1>Tags aprendidas</h1>
-    <h2>Índice</h2>
+    <h2 id="inicio">Índice</h2>
     <ul>
-        <li>Hierarquia dos títulos</li>
-        <li></li>
+        <li><a href="#titulos">Hierarquia dos títulos</a></li>
+        <li><a href="#p">Tag p</a></li>
+        <li><a href="#formatacao">Formatação em HTML</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#citacoes">Citações em HTML</a></li>
+        <li><a href="#outras">Outras tags</a></li>
+        <li><a href="#referencias">Referências</a></li>
     </ul>
-    <hr/>
-    <ol >
-       <li><h3>Hierarquia dos títulos:</h3>
-            <p>Títulos HTML são títulos ou subtítulos que você deseja exibir em uma página da web.</p>
-            <p>Os títulos HTML são definidos com as tags &lth1&gt até &lth6&gt</p>
-            <h1>Título 1</h1>
-            <h2>Título 2</h2>
-            <h3>Título 3</h3>
-            <h4>Título 4</h4>
-            <h5>Título 5</h5>
-            <h6>Título 6</h6>
-        </li> 
-        <li>
-            <h3>Tag p</h3>
-            <p>O elemento HTML &ltp&gtdefine um parágrafo.</p>
-            <p>Um parágrafo sempre começa em uma nova linha, e os navegadores adicionam <br>automaticamente algum espaço em branco (uma margem) antes e depois de um parágrafo.</p>
-            <p>Exemplo:</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptas maxime illum, vel ipsum quae, assumenda nisi explicabo deserunt fuga non nam, repellendus nulla. Labore laborum provident odit deserunt</p>
-        </li>
-    </ol>
 
-    <!--Utilizar todas as tags explicadas nas aulas: <h1> até <h6>, <p>, <mark>, <small>, <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>;
-Utilizar novas tags sugeridas: <font>, <del>, <p>, <abbr> (a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto).-->
-    
+    <hr/>
+
+    <h3 id="titulos">Hierarquia dos títulos:</h3>
+    <p>Títulos HTML são títulos ou subtítulos que você deseja exibir em uma página da web.</p>
+    <h1>&lt h1 &gt Título 1</h1>
+    <h2>&lt h2 &gt Título 2</h2>
+    <h3>&lt h3 &gt Título 3</h3>
+    <h4>&lt h4 &gt Título 4</h4>
+    <h5>&lt h5 &gt Título 5</h5>
+    <h6>&lt h6 &gt Título 6</h6>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr>
+
+    <h3 id="p">Tag p</h3>
+    <p>O elemento HTML &lt p &gt define uparágrafo.</p>
+    <p>Um parágrafo sempre começa em uma novlinha, e os navegadores adiciona<br>automaticamente algum espaço em branco (ummargem) antes e depois de um parágrafo.</p>
+    <p>Exemplo:</p>
+    <p>Lorem ipsum dolor sit amet consectetuadipisicing elit. Debitis voluptas maximillum, vel ipsum quae,<br/> assumenda nisexplicabo deserunt fuga non nam, repellendunulla. Labore laborum provident odit deseruntp</p>
+    <small><a href="#inicio">Voltar</a></small>
+
+    <hr>
+
+    <h3 id="formatacao">Formatação HTML</h3>
+    <p>Os elementos de formatação foram projetados para exibir tipos especiais de texto:</p>
+    <p>&lt mark &gt Texto <mark>marcado</mark></p>
+    <p>&lt strong &gt Texto <strong>importante</strong></p>
+    <p>&lt i &gt Texto em <i>itálico</i></p>
+    <p>&ltsmall &gt Texto<small>pequeno</small></p>
+    <p>&lt del &gt Texto <del>deletado</del></p>
+    <p>&lt u &gt Texto <u>sublinhado</u></p>
+    <p>&lt sub &gt Texto <sub>subscrito</sub></p>
+    <p>&lt sup &gt Texto <sup>sobrescrito</sup></p>
+    <small><a href="#inicio">Voltar</a></small>
+
+    <hr>
+
+    <h3 id="listas">Listas</h3>
+    <p>No Html temos as listar ordenadas e a não ordenadas.</p>
+    <p>&lt ol &gt Usamos pra listas ordenadas,usando li pra definir cada linha:</p>
+    <ol>
+        <li>Item1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <p>&lt ul &gt Usamos pra listas não ordenas:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <small><a href="#inicio">Voltar</a></small>
+
+    <hr>
+
+    <h3 id="citacoes">Citações em HTML</h3>
+    <p>&lt blockquote &gt Essa tag define uma sessão que é citada de outra fonte,como no exemplo abaixo:</p>
+    <blockquote cite="https://www.homehost.com.br/blog/tutoriais/o-que-e-html/">  O HTML é o componente básico da web, ele permite inserir o conteúdo estabelecer a estrutura básica de um website. <br>Portanto ele serve para dar significado e organizar as informações de uma página na web.<br/> Seisso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos.</blockquote>
+    <p>&lt abbr &gt Define uma abreviação,exemplo:</p>
+    <p><abbr title="HiperText Markup Language">HTML</abbr></p>
+    <p><abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <hr>
+
+    <h3 id="outras">Outras tags</h3>
+    <p>&lt a &gt Tag pra colocar um link,exemplo:</p>
+    <a href="https://www.dio.me/bootcamp">Acesse o dio</a>
+    <p>&lt hr &gt Coloca uma linha separando os conteúdos como fiz nessa página.</p>
+    <small><a href="#inicio">Voltar</a></small>
+
+    <hr>
+
+    <h3 id="referencias">Referências:</h3>
+    <p><a href="https://www.w3schools.com/html/html_quotation_elements.asp">Site da W3Scholls</a></p> 
 </body>
 </html>
