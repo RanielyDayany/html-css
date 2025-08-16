@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador descendente</title>
+    <style>
+        /*
+            Combinador descendente (espaço)
+            [SELETOR] [COMBINADOR] [SELETOR]
+        */
+        li{/*Aplicando pra todos os li*/
+            color: red;
+        }
+        li li{/*Aplicando os elementos li que tem dentro de outro li */
+            color: green;
+        }
+        #lista-01 li{/*Aplicando no elemento li que tem dentro da id*/
+            background-color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>SUbitem B</li>
+            </ul>
+        </li>
+         <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>SUbitem B</li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>
